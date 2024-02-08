@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="formulario-avanzado.css">
+    <title>Travel Box</title>
+</head>
+<body>
+    
+
+    <form action="https://formsubmit.co/galvezlaia19@gmail.com" method="post">
+
+        <fieldset class="datos-personales">
+            <legend>Datos Personales</legend>
+            
+            <label for="nombre">Nombre: *</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Escribe aquí tu nombre.">
+            <label for="apellidos">Apellidos: *</label>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Escribe aquí tus apellidos." required>
+            <label for="telefono">Telefono: *</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="XXX-XXX-XXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+            <label for="email">Correo Electrónico: *</label>
+            <input type="email" id="email" name="email" placeholder="Escribe aquí tu correo electrónico.">
+            <label for="password">Contraseña: *</label>
+            <input type="password" id="email" name="email" maxlength="8" placeholder="Máx. 8 caracteres" required>
+            <label for="password">Repite contraseña: *</label>
+            <input type="password" id="email" name="email" maxlength="8" placeholder="Máx. 8 caracteres" required>
+
+            <p>* El campo es obligatorio.</p>
+            
+        </fieldset>
+
+        <fieldset class="datos-viaje">
+            <legend>Datos Viaje</legend>
+            
+            <h2>¿Desde donde vas a salir?</h2>
+
+            <select name="airport" id="airport">
+                <option value="selecciona-aeropuerto">Selecciona el aeropuerto</option>
+                <option value="bcn">Barcelona - Josep Tarradellas-El Prat</option>
+                <option value="girona">Girona - Girona-Costa Brava (GRO)</option>
+                <option value="reus">Reus - Aeropuerto de Reus (REU)</option>
+                <option value="lleida">Lleida - Aeropuerto de Lleida Alguaire</option>
+            </select>
+            
+            <label for="destino"><h2>¿Dónde quieres viajar?</h2></label>
+            <div class="destinos">
+                <input type="radio" id="london" name="travel" value="london" required>
+                <label for="london"><img src="/img/london.jpg" alt="londres"></label>
+                <input type="radio" id="rome" name="travel" value="rome">
+                <label for="rome"><img src="/img/rome.jpg" alt="rome"></label>
+                <input type="radio" id="paris" name="travel" value="paris">
+                <label for="paris"><img src="/img/paris.jpg" alt="paris"></label>
+                <input type="radio" id="amsterdam" name="travel" value="amsterdam">
+                <label for="amsterdam"><img src="/img/amsterdam.jpeg" alt="amsterdam"></label>
+                <input type="radio" id="bruselas" name="travel" value="bruselas">
+                <label for="bruselas"><img src="/img/bruselas.jpeg" alt="bruselas"></label>
+                <input type="radio" id="barcelona" name="travel" value="barcelona">
+                <label for="barcelona"><img src="/img/BCN.jpeg" alt="barcelona"></label>
+            </div>    
+
+
+            <label for="date"><h2>¿Qué días te quieres ir?</h2></label>
+            <input type="date" id="date" name="date" required>
+
+
+        </fieldset>
+    
+        <fieldset class="opciones-compra">
+            <legend>Opciones de compra</legend>
+    
+            <label for="destino"><h2>¿Cómo quieres pagarlo?</h2></label>
+            <input type="radio" id="contado" name="pago" value="contado" required>
+            <label for="contado"><i class="bi bi-credit-card"></i></label>
+            <input type="radio" id="paypal" name="pago" value="paypal">
+            <label for="paypal"><i class="bi bi-paypal"></i></label>
+            <input type="radio" id="transferencia" name="pago" value="transferencia">
+            <label for="transferencia"><i class="bi bi-wallet-fill"></i></label>
+
+        </fieldset>
+
+        <input type="submit">
+
+    </form>
+
+
+</body>
+</html>
